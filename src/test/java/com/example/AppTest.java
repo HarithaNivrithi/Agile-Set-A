@@ -1,19 +1,13 @@
 package com.example;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
-
-/**
- * Unit test for simple App.
- */
 public class AppTest {
 
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    public void testSumOfDigits() {
+        int result = App.sumOfDigits(123);
+        assertEquals(6, result);
     }
 }
